@@ -1,0 +1,59 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700;800;900&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.transition-slow {
+  @apply transition duration-200;
+}
+
+.shadow-transform {
+  @apply transform hover:-translate-y-2 hover:scale-105 hover:shadow-xl;
+}
+
+.menu-links a {
+  @apply font-normal text-base leading-[18.96px] text-[#4F5665] hover:text-[#F53855] transition-slow;
+}
+
+.menu-links li {
+  @apply py-1.5 md:py-0 border-b md:border-none;
+}
+
+.links-gap li {
+  @apply md:pr-10;
+}
+
+.content-img-verificated li {
+  @apply flex text-sm font-normal items-center gap-3 leading-[30px] text-[#4F5665];
+}
+
+.content-verificated li {
+  @apply flex gap-6;
+}
+
+.img-plataforms > img {
+  @apply mx-auto;
+}
+
+.border-cards {
+  @apply border-2 border-[#DDDDDD] rounded-xl p-6 h-[260px] hover:border-[#F53855] transition-slow;
+}
+
+.links-footer li {
+  @apply flex flex-col text-base font-normal gap-10 leading-[30px] text-[#4F5665] hover:text-Dark transition-slow;
+}
+
+.shadow-extra {
+  --tw-shadow: 0 100px 180px -75px rgb(0 0 0 / 0.25);
+  --tw-shadow-colored: 0 25px 50px -12px var(--tw-shadow-color);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000),
+    var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+}
+
+.shadow-extra1 {
+  --tw-shadow: 0 100px 180px -75px rgba(0, 0, 0, 0.109);
+  --tw-shadow-colored: 0 25px 50px -12px var(--tw-shadow-color);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000),
+    var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+}

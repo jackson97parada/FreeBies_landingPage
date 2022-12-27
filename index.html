@@ -1,0 +1,834 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- ----------------- LINKS ----------------- -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/flowbite@1.5.4/dist/flowbite.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/tw-elements/dist/css/index.min.css"
+    />
+    <link rel="stylesheet" href="./public/css/styles.css" />
+    <!-- npx tailwindcss -i ./src/input.css -o ./public/css/styles.css --watch -->
+    <title>FreeBies</title>
+  </head>
+  <body class="font-Rubik">
+    <!-- ----------------- MAIN ------------------ -->
+    <main class="bg-white">
+      <!-- ---------------- HEADER ----------------- -->
+      <header class="p-8 lg:px-20 lg:pl-36 lg:pt-10">
+        <!-- ---------------- NAVBAR ----------------- -->
+        <nav class="flex flex-wrap justify-between items-center">
+          <!-- ----------------- LOGO ------------------ -->
+          <a
+            href="#"
+            class="flex items-center md:mx-auto lg:mx-0 font-medium text-xl leading-[23.7px] text-[#0B132A] hover:text-[#f53838] transition-slow"
+            ><img src="./public/images/logo.png" class="pr-2.5" alt="logo" />
+            <h1 class="pt-1 lg:pt-0">
+              Lasles<span class="font-bold">VPN</span>
+            </h1>
+          </a>
+          <!-- ----------- BUTTON HAMBURGUER ----------- -->
+          <button
+            data-collapse-toggle="navbar-default-1"
+            type="button"
+            class="inline-flex items-center p-2 text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+            aria-controls="navbar-default-2"
+            aria-expanded="false"
+          >
+            <span class="sr-only">Open main menu</span>
+            <svg
+              class="w-6 h-6"
+              aria-hidden="true"
+              fill="currentColor"
+              viewBox="0 0 20 20"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
+                clip-rule="evenodd"
+              ></path>
+            </svg>
+          </button>
+          <!-- ------------------ UL ------------------- -->
+          <ul
+            class="menu-links w-full lg:w-[73%] hidden md:flex md:flex-wrap md:justify-center md:items-center links-gap lg:justify-start p-2"
+            id="navbar-default-1"
+          >
+            <li><a href="#about">About</a></li>
+            <li><a href="#features">Features</a></li>
+            <li><a href="#pricing">Pricing</a></li>
+            <li><a href="#testimonials">Testimonials</a></li>
+            <li><a href="#help">Help</a></li>
+            <!-- ----------------- LOGIN ----------------- -->
+            <div
+              class="pt-2 md:pt-0 lg:pl-[10%] md:flex md:flex-wrap md:text-center lg:text-start lg:gap-6"
+            >
+              <button
+                class="py-3 w-full lg:w-auto font-medium text-base leading-[18.96px] text-[#0B132A]"
+              >
+                Sign In
+              </button>
+              <button
+                class="px-12 py-3 w-full lg:w-auto border border-[#F53855] rounded-full font-medium text-base leading-[18.96px] text-[#F53855] hover:bg-[#F53855] hover:text-white transition-slow"
+              >
+                Sign Up
+              </button>
+            </div>
+          </ul>
+        </nav>
+        <!-- ----------------- HERO ------------------ -->
+        <section
+          class="pt-8 md:pt-16 text-center lg:text-start lg:flex lg:flex-wrap"
+          id="hero"
+        >
+          <!-- -------------- description -------------- -->
+          <div class="pb-10 lg:pt-10 md:w-4/5 lg:w-2/4 md:mx-auto lg:mx-0">
+            <!-- ----------------- title ----------------- -->
+            <h1
+              class="font-medium text-[40px] md:text-[50px] leading-[70px] text-Dark"
+            >
+              Want anything to be easy with
+              <span class="font-bold">LaslesVPN</span>.
+            </h1>
+            <!-- --------------- paragraph ---------------- -->
+            <p
+              class="py-6 lg:pt-5 lg:pb-12 font-normal text-base leading-[30px] text-[#4F5665]"
+            >
+              Provide a network for all your needs with ease and fun using
+              <span class="font-medium">LaslesVPN</span> discover interesting
+              features from us.
+            </p>
+            <!-- ---------------- button ----------------- -->
+            <button
+              class="px-20 py-[18px] rounded-lg bg-[#F53838] font-bold text-base leading-[25px] text-white shadow-2xl shadow-[#f5383880] transform hover:translate-y-[6px] hover:shadow-xl hover:bg-red-500 transition-slow"
+            >
+              Get Started
+            </button>
+          </div>
+          <!-- ---------------- banner ----------------- -->
+          <img
+            src="./public/images/image_hero.png"
+            class="pt-6 lg:pt-0 md:pt-12 md:mx-auto lg:mx-0 lg:w-2/4 lg:h-[50%]"
+            alt="hero"
+          />
+        </section>
+      </header>
+      <!-- --------------- FEATURES ---------------- -->
+      <section
+        class="m-8 p-10 px-16 my-20 lg:w-3/4 lg:mx-auto md:flex md:justify-between bg-white space-y-6 md:space-y-0 shadow-extra rounded-lg shadow-[#0D102510]"
+        id="features"
+      >
+        <!-- ----------------- first ----------------- -->
+        <div class="flex justify-center gap-8">
+          <div class="px-[18px] py-[17px] rounded-full my-auto bg-[#FFECEC]">
+            <img src="./public/images/icon1.png" alt="user" />
+          </div>
+          <div class="w-[70px] flex flex-col justify-center">
+            <img src="./public/images/90+.png" class="w-12" alt="" />
+            <h2 class="font-normal text-lg md:text-xl text-[#4F5665] pt-2">
+              Users
+            </h2>
+          </div>
+        </div>
+        <!-- ----------------- second ----------------- -->
+        <div
+          class="flex justify-center border-y-2 md:border-y-0 py-6 lg:border-x-2 lg:border-[#EEEFF2] lg:px-24 gap-8"
+        >
+          <div class="px-5 py-4 rounded-full my-auto bg-[#FFECEC]">
+            <img src="./public/images/icon2.png" alt="location" />
+          </div>
+          <div class="w-[70px] md:w-[90px] flex flex-col justify-center">
+            <img src="./public/images/30+.png" class="w-12" alt="" />
+            <h2 class="font-normal text-lg md:text-xl text-[#4F5665] pt-2">
+              Locations
+            </h2>
+          </div>
+        </div>
+        <!-- ----------------- thirth ----------------- -->
+        <div class="flex justify-center gap-8">
+          <div class="px-4 py-4 rounded-full my-auto bg-[#FFECEC]">
+            <img src="./public/images/icon3.png" alt="server" />
+          </div>
+          <div class="w-[70px] flex flex-col justify-center">
+            <img src="./public/images/50+.png" class="w-12" alt="" />
+            <h2 class="font-normal text-lg md:text-xl text-[#4F5665] pt-2">
+              Servers
+            </h2>
+          </div>
+        </div>
+      </section>
+      <!-- ---------------- CONTENT ---------------- -->
+      <section
+        class="p-8 lg:px-20 lg:pl-36 lg:pt-6 md:pb-32 text-center lg:text-start lg:flex lg:flex-wrap lg:justify-between"
+      >
+        <!-- ------------- image content ------------- -->
+        <img
+          src="./public/images/image_content1.png"
+          class="md:mx-auto lg:mx-0"
+          alt="content"
+        />
+        <!-- -------------- description -------------- -->
+        <div
+          class="pt-10 space-y-6 lg:space-y-5 md:w-4/5 lg:w-2/5 md:mx-auto lg:mx-0"
+        >
+          <!-- ----------------- title ----------------- -->
+          <h1 class="font-medium text-[35px] leading-[50px] lg:w-5/6">
+            We Provide Many Features You Can Use
+          </h1>
+          <!-- --------------- paragraph --------------- -->
+          <p class="font-normal text-base leading-[30px] text-[#4F5665]">
+            You can explore the features that we provide with fun and have their
+            own functions each feature.
+          </p>
+          <!-- ----------------- list ------------------ -->
+          <ul class="content-img-verificated pl-3 lg:space-y-3 lg:pl-0">
+            <li>
+              <img
+                src="./public/images/verificated.png"
+                alt="verificated"
+              />Powerfull online protection.
+            </li>
+            <li>
+              <img
+                src="./public/images/verificated.png"
+                alt="verificated"
+              />Internet without borders.
+            </li>
+            <li>
+              <img
+                src="./public/images/verificated.png"
+                alt="verificated"
+              />Supercharged VPN
+            </li>
+            <li>
+              <img src="./public/images/verificated.png" alt="verificated" />No
+              specific time limits.
+            </li>
+          </ul>
+        </div>
+      </section>
+      <!-- ---------------- PRICING ---------------- -->
+      <section class="p-8 py-12 md:py-20 bg-[#F6F6F6] text-center">
+        <!-- ----------------- title ----------------- -->
+        <h1 class="font-medium text-4xl leading-[50px] text-Dark">
+          Choose Your Plan
+        </h1>
+        <!-- --------------- paragraph --------------- -->
+        <p
+          class="font-normal text-base leading-[30px] text-[#4F5665] py-6 md:w-4/5 md:mx-auto lg:w-[555px]"
+        >
+          Let's choose the package that is best for you and explore it happily
+          and cheerfully.
+        </p>
+        <!-- ----------------- CARDS ----------------- -->
+        <div
+          class="space-y-10 lg:space-y-0 pt-10 lg:flex lg:justify-center lg:gap-12"
+        >
+          <!-- -------------- first card --------------- -->
+          <div
+            class="flex flex-col justify-between md:mx-auto lg:mx-0 pb-12 pt-16 px-14 md:w-[330px] h-[760px] rounded-xl border-2 border-[#DDDDDD] hover:border-[#F53838] transition-slow"
+          >
+            <div>
+              <!-- ----------------- image ----------------- -->
+              <img
+                src="./public/images/card.png"
+                class="w-[144.9px] h-[165.37px] mx-auto"
+                alt="card"
+              />
+              <!-- ----------------- title ----------------- -->
+              <h1 class="py-7 font-medium text-lg leading-[30px] text-Dark">
+                Free Plan
+              </h1>
+              <!-- ----------------- description ----------------- -->
+              <ul class="content-img-verificated content-verificated space-y-3">
+                <li>
+                  <img
+                    src="./public/images/verificated_withfond.png"
+                    alt="withfond"
+                  />Unlimited Bandwitch
+                </li>
+                <li>
+                  <img
+                    src="./public/images/verificated_withfond.png"
+                    alt="withfond"
+                  />Encrypted Connection
+                </li>
+                <li>
+                  <img
+                    src="./public/images/verificated_withfond.png"
+                    alt="withfond"
+                  />No Traffic Logs
+                </li>
+                <li>
+                  <img
+                    src="./public/images/verificated_withfond.png"
+                    alt="withfond"
+                  />Works on All Devices
+                </li>
+              </ul>
+            </div>
+            <div>
+              <!-- ----------------- price ----------------- -->
+              <h1 class="font-medium text-[25px] leading-[30px] text-Dark pb-5">
+                Free
+              </h1>
+              <!-- ---------------- button ----------------- -->
+              <button
+                class="px-14 py-2.5 rounded-full border-2 border-[#F53838] font-bold text-base leading-[18.96px] text-[#F53838]"
+              >
+                Select
+              </button>
+            </div>
+          </div>
+          <!-- -------------- second card --------------- -->
+          <div
+            class="flex flex-col justify-between md:mx-auto lg:mx-0 pb-12 pt-16 px-14 md:w-[330px] h-[760px] rounded-xl border-2 border-[#DDDDDD] hover:border-[#F53838] transition-slow"
+          >
+            <div>
+              <!-- ----------------- image ----------------- -->
+              <img
+                src="./public/images/card.png"
+                class="w-[144.9px] h-[165.37px] mx-auto"
+                alt="card"
+              />
+              <!-- ----------------- title ----------------- -->
+              <h1 class="py-7 font-medium text-lg leading-[30px] text-Dark">
+                Standard Plan
+              </h1>
+              <!-- ----------------- description ----------------- -->
+              <ul class="content-img-verificated content-verificated space-y-3">
+                <li>
+                  <img
+                    src="./public/images/verificated_withfond.png"
+                    alt="withfond"
+                  />Unlimited Bandwitch
+                </li>
+                <li>
+                  <img
+                    src="./public/images/verificated_withfond.png"
+                    alt="withfond"
+                  />Encrypted Connection
+                </li>
+                <li>
+                  <img
+                    src="./public/images/verificated_withfond.png"
+                    alt="withfond"
+                  />Yes Traffic Logs
+                </li>
+                <li>
+                  <img
+                    src="./public/images/verificated_withfond.png"
+                    alt="withfond"
+                  />Works on All Devices
+                </li>
+                <li>
+                  <img
+                    src="./public/images/verificated_withfond.png"
+                    alt="withfond"
+                  />Connect Anyware
+                </li>
+              </ul>
+            </div>
+            <div>
+              <!-- ----------------- price ----------------- -->
+              <h1 class="font-medium text-[25px] leading-[30px] text-Dark pb-5">
+                $9 <span class="font-normal text-[#4f5665]">/ mo</span>
+              </h1>
+              <!-- ---------------- button ----------------- -->
+              <button
+                class="px-14 py-2.5 rounded-full border-2 border-[#F53838] font-bold text-base leading-[18.96px] text-[#F53838] hover:bg-[#F53838] hover:text-white transition-slow"
+              >
+                Select
+              </button>
+            </div>
+          </div>
+          <!-- -------------- thirth card --------------- -->
+          <div
+            class="flex flex-col justify-between md:mx-auto lg:mx-0 pb-12 pt-16 px-14 md:w-[330px] h-[760px] rounded-xl border-2 border-[#DDDDDD] hover:border-[#F53838] transition-slow"
+          >
+            <div>
+              <!-- ----------------- image ----------------- -->
+              <img
+                src="./public/images/card.png"
+                class="w-[144.9px] h-[165.37px] mx-auto"
+                alt="card"
+              />
+              <!-- ----------------- title ----------------- -->
+              <h1 class="py-7 font-medium text-lg leading-[30px] text-Dark">
+                Premium Plan
+              </h1>
+              <!-- ----------------- description ----------------- -->
+              <ul class="content-img-verificated content-verificated space-y-3">
+                <li>
+                  <img
+                    src="./public/images/verificated_withfond.png"
+                    alt="withfond"
+                  />Unlimited Bandwitch
+                </li>
+                <li>
+                  <img
+                    src="./public/images/verificated_withfond.png"
+                    alt="withfond"
+                  />Encrypted Connection
+                </li>
+                <li>
+                  <img
+                    src="./public/images/verificated_withfond.png"
+                    alt="withfond"
+                  />Yes Traffic Logs
+                </li>
+                <li>
+                  <img
+                    src="./public/images/verificated_withfond.png"
+                    alt="withfond"
+                  />Works on All Devices
+                </li>
+                <li>
+                  <img
+                    src="./public/images/verificated_withfond.png"
+                    alt="withfond"
+                  />Connect Anyware
+                </li>
+                <li>
+                  <img
+                    src="./public/images/verificated_withfond.png"
+                    alt="withfond"
+                  />Get New Features
+                </li>
+              </ul>
+            </div>
+            <div>
+              <!-- ----------------- price ----------------- -->
+              <h1 class="font-medium text-[25px] leading-[30px] text-Dark pb-5">
+                $12 <span class="font-normal text-[#4f5665]">/ mo</span>
+              </h1>
+              <!-- ---------------- button ----------------- -->
+              <button
+                class="px-14 py-2.5 rounded-full border-2 border-[#F53838] bg-[#F53838] font-bold text-base leading-[18.96px] text-white shadow-2xl shadow-[#f5383880] transform hover:bg-white hover:text-[#f53838] hover:translate-y-2 hover:shadow-xl transition-slow"
+              >
+                Select
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- ------------------ MAP ------------------ -->
+      <section
+        class="p-8 py-12 lg:px-20 lg:pl-36 lg:pt-10 bg-[#F6F6F6] text-center"
+      >
+        <!-- ----------------- title ----------------- -->
+        <h1
+          class="font-medium text-[35px] leading-[50px] text-Dark md:w-2/4 lg:w-2/6 md:mx-auto"
+        >
+          Huge Global Network of Fast VPN
+        </h1>
+        <!-- --------------- paragraph --------------- -->
+        <p
+          class="font-normal text-base leading-[30px] text-[#4F5665] pt-6 pb-32 md:w-3/4 lg:w-2/4 md:mx-auto"
+        >
+          See <span class="font-medium">LaslesVPN</span> everywhere to make it
+          easier for you when you move locations.
+        </p>
+        <!-- ------------------ map ------------------ -->
+        <img src="./public/images/map.png" class="pb-12" alt="map" />
+        <!-- -------------- platforms --------------- -->
+        <div class="img-plataforms lg:flex lg:items-center">
+          <!-- ---------------- netflix ---------------- -->
+          <img
+            src="./public/images/netflix.png"
+            class="lg:pr-10"
+            alt="netflix"
+          />
+          <!-- ---------------- reddit ---------------- -->
+          <img src="./public/images/reddit.png" alt="reddit" />
+          <!-- ---------------- amazon ---------------- -->
+          <img src="./public/images/amazon.png" alt="amazon" />
+          <!-- ---------------- discord ---------------- -->
+          <img src="./public/images/discord.png" alt="discord" />
+          <!-- ---------------- spotify ---------------- -->
+          <img
+            src="./public/images/spotify.png"
+            class="lg:pl-10"
+            alt="spotify"
+          />
+        </div>
+      </section>
+      <!-- ------------- TESTIMONIALS WITH SLIDESHOW -------------- -->
+      <section class="p-8 py-6 pb-32 lg:pb-0 bg-[#F6F6F6] text-center">
+        <!-- ----------------- title ----------------- -->
+        <h1
+          class="font-medium text-[35px] leading-[50px] text-Dark md:w-2/3 md:mx-auto lg:w-2/5"
+        >
+          Trusted by Thousands of Happy Customer
+        </h1>
+        <!-- --------------- paragraph --------------- -->
+        <p
+          class="font-normal text-base leading-[30px] text-[#4F5665] pt-6 pb-12 md:w-3/4 md:mx-auto lg:w-2/5"
+        >
+          These are the stories of our customers who have joined us with great
+          pleasure when using this crazy feature.
+        </p>
+
+        <!-- ----------------- CARDS ----------------- -->
+
+        <div id="default-carousel" data-carousel="slide">
+          <!-- ------------ carousel wraper ------------ -->
+          <button
+            type="button"
+            class="z-30 hidden md:inline md:mr-5 relative bottom-28 cursor-pointer focus:outline-none"
+            data-carousel-prev
+          >
+            <i
+              class="fa-solid fa-arrow-left text-white hover:text-[#f53838] bg-[#f53838] hover:bg-white text-2xl rounded-full px-3.5 py-2 border-2 border-[#f53838] transition-slow"
+            ></i>
+          </button>
+          <div
+            class="relative overflow-hidden rounded-lg inline-block h-[260px] w-[300px] md:w-[375px]"
+          >
+            <!-- -------------- first card --------------- -->
+            <div data-carousel-item="active">
+              <div class="border-cards">
+                <!-- ---------------- profile ---------------- -->
+                <div class="flex justify-between items-center">
+                  <div class="flex items-center text-left gap-4">
+                    <!-- ---------------- tumblr ----------------- -->
+                    <img src="./public/images/robert.png" alt="robert" />
+                    <!-- ----------------- name ------------------ -->
+                    <div>
+                      <h1
+                        class="font-medium text-lg md:leading-[30px] text-Dark"
+                      >
+                        Viezh Robert
+                      </h1>
+                      <!-- ----------------- from ------------------ -->
+                      <p
+                        class="font-normal text-sm md:leading-[30px] text-[#4F5665]"
+                      >
+                        Warsaw, Poland
+                      </p>
+                    </div>
+                  </div>
+                  <!-- ----------------- score ----------------- -->
+                  <div class="flex items-center gap-3">
+                    <p
+                      class="pt-1 font-normal text-base leading-[30px] text-Dark"
+                    >
+                      4.5
+                    </p>
+                    <!-- ----------------- star ------------------ -->
+                    <img src="./public/images/star.png" alt="star" />
+                  </div>
+                </div>
+                <p
+                  class="font-normal text-base leading-[30px] text-Dark text-left pt-3.5"
+                >
+                  “Wow... I am very happy to use this VPN, it turned out to be
+                  more than my expectations and so far there have been no
+                  problems. LaslesVPN always the best”.
+                </p>
+              </div>
+            </div>
+            <!-- -------------- second card --------------- -->
+            <div data-carousel-item>
+              <div class="border-cards">
+                <!-- ---------------- profile ---------------- -->
+                <div class="flex justify-between items-center">
+                  <div class="flex items-center text-left gap-4">
+                    <!-- ---------------- tumblr ----------------- -->
+                    <img src="./public/images/yessica.png" alt="yessica" />
+                    <!-- ----------------- name ------------------ -->
+                    <div>
+                      <h1
+                        class="font-medium text-lg md:leading-[30px] text-Dark"
+                      >
+                        Yessica Christy
+                      </h1>
+                      <!-- ----------------- from ------------------ -->
+                      <p
+                        class="font-normal text-sm md:leading-[30px] text-[#4F5665]"
+                      >
+                        Shanxi, China
+                      </p>
+                    </div>
+                  </div>
+                  <!-- ----------------- score ----------------- -->
+                  <div class="flex items-center gap-3">
+                    <p
+                      class="pt-1 font-normal text-base leading-[30px] text-Dark"
+                    >
+                      4.5
+                    </p>
+                    <!-- ----------------- star ------------------ -->
+                    <img src="./public/images/star.png" alt="star" />
+                  </div>
+                </div>
+                <p
+                  class="font-normal text-base leading-[30px] text-Dark text-left pt-3.5"
+                >
+                  “I like it because I like to travel far and still can connect
+                  with high speed.”.
+                </p>
+              </div>
+            </div>
+            <!-- -------------- thirth card --------------- -->
+            <div data-carousel-item>
+              <div class="border-cards">
+                <!-- ---------------- profile ---------------- -->
+                <div class="flex justify-between items-center">
+                  <div class="flex items-center text-left gap-4">
+                    <!-- ---------------- tumblr ----------------- -->
+                    <img src="./public/images/young.png" alt="young" />
+                    <!-- ----------------- name ------------------ -->
+                    <div>
+                      <h1
+                        class="font-medium text-lg md:leading-[30px] text-Dark"
+                      >
+                        Kim Young Jou
+                      </h1>
+                      <!-- ----------------- from ------------------ -->
+                      <p
+                        class="font-normal text-sm md:leading-[30px] text-[#4F5665]"
+                      >
+                        Seoul, South Korea
+                      </p>
+                    </div>
+                  </div>
+                  <!-- ----------------- score ----------------- -->
+                  <div class="flex items-center gap-3">
+                    <p
+                      class="pt-1 font-normal text-base leading-[30px] text-Dark"
+                    >
+                      4.5
+                    </p>
+                    <!-- ----------------- star ------------------ -->
+                    <img src="./public/images/star.png" alt="star" />
+                  </div>
+                </div>
+                <p
+                  class="font-normal text-base leading-[30px] text-Dark text-left pt-3.5"
+                >
+                  “This is very unusual for my business that currently requires
+                  a virtual private network that has high security.”.
+                </p>
+              </div>
+            </div>
+            <!-- -------------- fourth card --------------- -->
+            <div data-carousel-item>
+              <div class="border-cards">
+                <!-- ---------------- profile ---------------- -->
+                <div class="flex justify-between items-center">
+                  <div class="flex items-center text-left gap-4">
+                    <!-- ---------------- tumblr ----------------- -->
+                    <img src="./public/images/yessica.png" alt="yessi" />
+                    <!-- ----------------- name ------------------ -->
+                    <div>
+                      <h1
+                        class="font-medium text-lg md:leading-[30px] text-Dark"
+                      >
+                        Yessi Chri
+                      </h1>
+                      <!-- ----------------- from ------------------ -->
+                      <p
+                        class="font-normal text-sm md:leading-[30px] text-[#4F5665]"
+                      >
+                        Warsaw, Poland
+                      </p>
+                    </div>
+                  </div>
+                  <!-- ----------------- score ----------------- -->
+                  <div class="flex items-center gap-3">
+                    <p
+                      class="pt-1 font-normal text-base leading-[30px] text-Dark"
+                    >
+                      4.5
+                    </p>
+                    <!-- ----------------- star ------------------ -->
+                    <img src="./public/images/star.png" alt="star" />
+                  </div>
+                </div>
+                <p
+                  class="font-normal text-base leading-[30px] text-Dark text-left pt-3.5"
+                >
+                  “I like it because I like to travel far and still can connect
+                  with high speed.”.
+                </p>
+              </div>
+            </div>
+          </div>
+          <button
+            type="button"
+            class="z-30 hidden md:inline md:ml-5 relative bottom-28 cursor-pointer focus:outline-none"
+            data-carousel-next
+          >
+            <i
+              class="fa-solid fa-arrow-right text-white hover:text-[#f53838] bg-[#f53838] hover:bg-white text-2xl rounded-full px-3.5 py-2 border-2 border-[#f53838] transition-slow"
+            ></i>
+          </button>
+          <!-- -------------- INDICATORS --------------- -->
+          <div
+            class="absolute z-30 flex space-x-3 translate-x-full md:translate-x-[350%] lg:translate-x-[650%] translate-y-4 pt-10"
+          >
+            <button
+              type="button"
+              class="w-3.5 h-3.5 rounded-full active:bg-[#F53838] focus:bg-[#F53838] bg-[#F53838] transition-slow"
+              aria-current="false"
+              aria-label="Slide 1"
+              data-carousel-slide-to="0"
+            ></button>
+            <button
+              type="button"
+              class="w-3.5 h-3.5 rounded-full active:bg-[#F53838] focus:bg-[#F53838] bg-[#F53838] transition-slow"
+              aria-current="false"
+              aria-label="Slide 2"
+              data-carousel-slide-to="1"
+            ></button>
+            <button
+              type="button"
+              class="w-3.5 h-3.5 rounded-full active:bg-[#F53838] focus:bg-[#F53838] bg-[#F53838] transition-slow"
+              aria-current="false"
+              aria-label="Slide 3"
+              data-carousel-slide-to="2"
+            ></button>
+            <button
+              type="button"
+              class="w-3.5 h-3.5 rounded-full active:bg-[#F53838] focus:bg-[#F53838] bg-[#F53838] transition-slow"
+              aria-current="false"
+              aria-label="Slide 3"
+              data-carousel-slide-to="3"
+            ></button>
+          </div>
+        </div>
+      </section>
+      <!-- --------------- SUBSCRIBE --------------- -->
+      <section class="bg-[#F6F6F6] bg-gradient-to-t from-white to-[#F6F6F6]">
+        <div
+          class="relative lg:top-[111px] lg:flex lg:items-center lg:justify-between p-8 md:w-[95%] lg:w-[85%] rounded-xl md:mx-auto md:px-14 lg:px-20 py-12 lg:py-14 bg-white text-center lg:text-start md:space-y-6 shadow-extra1"
+        >
+          <!-- -------------- description -------------- -->
+          <div class="space-y-6 lg:space-y-2 md:inline-block">
+            <!-- ----------------- title ----------------- -->
+            <h1
+              class="font-medium text-[35px] leading-[45px] text-Dark md:w-4/5 lg:w-[55%] md:inline-block"
+            >
+              Subscribe Now for Get Special Features!
+            </h1>
+            <!-- --------------- subtitle ---------------- -->
+            <h2 class="font-normal text-base leading-[30px] text-[#4F5665]">
+              Let's subscribe with us and find the fun.
+            </h2>
+          </div>
+          <!-- ---------------- button ----------------- -->
+          <div class="pt-12 md:pt-0">
+            <button
+              class="px-16 py-[18px] rounded-xl bg-[#F53838] font-bold text-base leading-[25px] text-white shadow-2xl shadow-[#f5383880] transform hover:bg-Dark hover:translate-y-[4px] hover:shadow-xl transition-slow"
+            >
+              Subscribe Now
+            </button>
+          </div>
+        </div>
+      </section>
+      <!-- ---------------- FOOTER ----------------- -->
+      <footer
+        class="p-8 py-12 lg:px-20 lg:pr-24 lg:pl-[100px] lg:flex lg:justify-between lg:pt-44 md:pb-28 bg-[#F8F8F8] text-start"
+      >
+        <!-- ----------------- pages ----------------- -->
+        <div class="space-y-5 lg:space-y-8">
+          <!-- ----------------- logo ------------------ -->
+          <a
+            href="#"
+            class="flex items-center font-medium text-xl leading-[23.7px] text-[#0B132A] hover:text-[#f53838] transition-slow"
+            ><img src="./public/images/logo.png" class="pr-2.5" alt="logo" />
+            <h1 class="pt-1">Lasles<span class="font-bold">VPN</span></h1>
+          </a>
+          <!-- -------------- description -------------- -->
+          <p
+            class="font-normal text-base lg:w-[55%] lg:inline-block leading-[30px] text-[#4F5665]"
+          >
+            <span class="font-medium">LaslesVPN</span> is a private virtual
+            network that has unique features and has high security.
+          </p>
+          <!-- ----------------- sites ----------------- -->
+          <ul class="space-x-4">
+            <!-- --------------- facebook ---------------- -->
+            <a
+              href=""
+              class="bg-white px-3 py-2 rounded-full border border-[#F53838] border-opacity-20 shadow-xl"
+              ><i
+                class="fa-brands fa-facebook-f text-[#F53855] hover:text-blue-600 transition-slow"
+              ></i
+            ></a>
+            <!-- --------------- twitter ---------------- -->
+            <a
+              href=""
+              class="bg-white px-2.5 py-2 rounded-full border border-[#F53838] border-opacity-20 shadow-xl"
+              ><i
+                class="fa-brands fa-twitter text-[#F53855] hover:text-cyan-400 transition-slow"
+              ></i
+            ></a>
+            <!-- --------------- instagram ---------------- -->
+            <a
+              href=""
+              class="bg-white px-2.5 py-2 rounded-full border border-[#F53838] border-opacity-20 shadow-xl"
+              ><i
+                class="fa-brands fa-instagram text-[#F53855] hover:text-purple-500 transition-slow"
+              ></i
+            ></a>
+          </ul>
+          <!-- ----------------- text ------------------ -->
+          <p
+            class="font-normal text-base leading-[30px] lg:inline-block text-[#AFB5C0]"
+          >
+            ©2020Lasles<span class="font-medium">VPN</span>
+          </p>
+        </div>
+        <!-- ----------------- links ----------------- -->
+        <div class="flex flex-wrap justify-between gap-5 pt-5 lg:pt-0 lg:w-2/4">
+          <!-- ---------------- list 1 ----------------- -->
+          <ul class="links-footer text-left md:space-y-3">
+            <h1 class="font-medium text-lg leading-[30px] text-Dark">
+              Product
+            </h1>
+            <li><a href="">Download</a></li>
+            <li><a href="">Pricing</a></li>
+            <li><a href="">Locations</a></li>
+            <li><a href="">Server</a></li>
+            <li><a href="">Countries</a></li>
+            <li><a href="">Blog</a></li>
+          </ul>
+          <!-- ---------------- list 2 ----------------- -->
+          <ul class="links-footer text-left md:space-y-3">
+            <h1 class="font-medium text-lg leading-[30px] text-Dark">Engage</h1>
+            <li><a href="">LaslesVPN ?</a></li>
+            <li><a href="">FAQ</a></li>
+            <li><a href="">Tutorials</a></li>
+            <li><a href="">About Us</a></li>
+            <li><a href="">Privacy Policy</a></li>
+            <li><a href="">Terms of Service</a></li>
+          </ul>
+          <!-- ---------------- list 3 ----------------- -->
+          <ul class="links-footer text-left md:space-y-3">
+            <h1 class="font-medium text-lg leading-[30px] text-Dark">
+              Earn Money
+            </h1>
+            <li><a href="">Affiliate</a></li>
+            <li><a href="">Become Partner</a></li>
+          </ul>
+        </div>
+      </footer>
+    </main>
+    <script src="./node_modules/flowbite/dist/flowbite.js"></script>
+    <script src="https://unpkg.com/flowbite@1.5.4/dist/flowbite.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/tw-elements/dist/js/index.min.js"></script>
+  </body>
+</html>
